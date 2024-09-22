@@ -1,0 +1,91 @@
+:root {
+    /* layout */
+    --main-color: #577399;
+    --background-footer: #495867;
+    /* text */
+    --main-text: #000000;
+    --secondary-text: #FFFFFF;
+    /* botones */
+    --secondary-button-text: #000000;
+    --main-button-text: #FFFFFF;
+    --main-button-background: #FE5F55;
+    --secondary-button-background: #BDD5EA;
+
+    --font-large-screen: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /*1rem = 10px*/
+    font-family: "Andada Pro", serif;
+    overflow-x: hidden;
+}
+
+body{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
+
+}
+/* HIDDEN  ELEMENTS ---------------------------- */
+.hidden  {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/*  HEADER ------------------------------- */
+.header{
+    width: 100%;
+    max-width: 100%; 
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    color: var(--secondary-text);
+}
+.header__left {
+    display: flex;
+    gap: 2rem;
+}
+.header__img {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+.header__sections {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap:  2rem;
+}
+.header__section {
+    list-style: none;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header__login-out{
+    display: none;
+    gap: 2rem;
+}
+.header__button {
+    font-size: var(--font-large-screen);
+    font-weight: bold;
+    color: var(--main-button-text);
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+.header__in{
+    background-color: transparent;
+}
