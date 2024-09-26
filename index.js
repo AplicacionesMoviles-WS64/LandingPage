@@ -54,7 +54,8 @@ function openSection(e){
         sectionConoceMas.classList.remove("hidden");
     }
     if ((e.target.classList.contains("slash__plans") && isLi ) || e.target.id=="subcripcion-landing"){
-        location.replace("https://fastlearners-opensource.web.app/subscriptions");
+        //location.replace("https://fastlearners-opensource.web.app/subscriptions");
+        sectionPlanes.classList.remove("hidden");
     }
 }
 
